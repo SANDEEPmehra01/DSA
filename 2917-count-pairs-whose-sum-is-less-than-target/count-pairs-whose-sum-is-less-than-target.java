@@ -9,10 +9,10 @@ class Solution {
             if(sum<target){
                 count=count+(j-i);
                 i=i+1;
-            }else
+            }else{
             j=j-1;
-            
         }
+    }
         return count;
     }
 }
