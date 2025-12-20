@@ -4,10 +4,7 @@ class Solution {
         for(int i=0;i<nums.length;i++){
             int lookingFor=target-nums[i];
             if(map.containsKey(lookingFor)){
-                return new int[]{
-                    i,map.get(lookingFor)
-                };
-
+                return new int[]{i,map.get(lookingFor)};
             }
             map.put(nums[i],i);
         }
